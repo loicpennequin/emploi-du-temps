@@ -154,6 +154,13 @@ div.materialpicker-white.selected {
 
 .cours-candidat {
   padding: 0 5px;
-  border: solid white 1px; }
+  border: solid white 1px;
+  width: 33%;
+  display: inline-block;
+  font-size: 0.9em;
+  overflow-x: hidden; }
+
+.liste-cours {
+  overflow-x: scroll; }
 
 /*# sourceMappingURL=EDTmain.css.map */

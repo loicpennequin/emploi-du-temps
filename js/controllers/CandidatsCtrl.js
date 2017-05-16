@@ -57,7 +57,7 @@ app.controller("CandidatsCtrl", function($http,planningFactory, $scope){
                 cours.candidats.push(candidat)
             }
         }
-        // $scope.getPlanning()
+        $scope.getPlanning()
         console.log($scope.planning);
     }
 
