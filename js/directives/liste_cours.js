@@ -13,7 +13,7 @@ app.directive("listecoursDirective",function(){
     };
     return{
         scope: true,
-        templateUrl : 'partials/_listecours.html',
+        templateUrl : 'partials/directives/listecours.html',
         controller : controller
     }
 });

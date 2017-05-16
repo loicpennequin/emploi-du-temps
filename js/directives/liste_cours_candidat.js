@@ -20,7 +20,7 @@ app.directive("listecourscandidatDirective",['planningFactory', function(plannin
     };
     return{
         scope: true,
-        templateUrl : 'partials/_listecourscandidat.html',
+        templateUrl : 'partials/directives/listecourscandidat.html',
         controller : controller
     }
 }]);
