@@ -1,0 +1,159 @@
+.menu-btn {
+  width: 100%;
+  border: solid #9DBCE4 1px;
+  margin-top: 5px;
+  background-color: #35398E;
+  color: #9DBCE4;
+  padding: 5px; }
+
+.salles-menu-wrapper {
+  margin-bottom: 10px;
+  color: white; }
+
+.salles-menu {
+  background-color: #9DBCE4; }
+  .salles-menu ul {
+    padding-left: 0;
+    padding: 5px 15px;
+    list-style: none; }
+  .salles-menu li {
+    display: inline-block;
+    width: 50%; }
+  .salles-menu input {
+    color: #35398E; }
+
+.competences-menu button {
+  width: 100%; }
+
+.salle-cell {
+  background-color: white;
+  padding: 5px;
+  color: #35398E;
+  margin-bottom: 3px;
+  position: relative; }
+
+.cours-btn {
+  background-color: #9DBCE4;
+  color: #35398E;
+  border: solid 1px #35398E;
+  border-radius: 5px; }
+
+.input-half {
+  width: 45%;
+  display: inline-block;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%; }
+
+header {
+  background-color: rgba(157, 188, 228, 0.5);
+  margin-bottom: 20px; }
+
+main {
+  margin-top: 20px; }
+
+.zone-candidat {
+  font-size: 1.3em; }
+
+.logo {
+  width: 100%; }
+
+.add-btn, .add-cours-btn {
+  padding: 0 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  display: block;
+  font-size: 1.3em;
+  margin-right: 0;
+  margin-left: auto; }
+
+.add-cours-btn {
+  color: #35398E;
+  background-color: #9DBCE4;
+  border: solid 2px white;
+  padding: 0 10px; }
+
+.del-btn {
+  padding: 0 5px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.3em; }
+
+.zone-candidat {
+  background-color: #9DBCE4; }
+
+.col-day {
+  background-color: rgba(157, 188, 228, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: solid white 3px; }
+
+.candidat-liste {
+  color: white;
+  padding: 5px;
+  text-align: center; }
+  .candidat-liste ul {
+    padding-left: 0;
+    list-style: none; }
+    .candidat-liste ul li {
+      border-bottom: dashed 1px white; }
+  .candidat-liste .add-candidat, .candidat-liste .cours-edit-form {
+    background-color: white;
+    color: #35398E;
+    padding: 5px; }
+    .candidat-liste .add-candidat input[type=text], .candidat-liste .cours-edit-form input[type=text] {
+      width: 90%; }
+
+.day-wrapper-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(157, 188, 228, 0.5);
+  box-sizing: border-box;
+  border: solid white 3px;
+  padding-bottom: 5px; }
+  .day-wrapper-top form {
+    padding-top: 5px; }
+  .day-wrapper-top select {
+    width: 45%; }
+  .day-wrapper-top input {
+    margin: 5px 0; }
+  .day-wrapper-top input[type=submit] {
+    width: 100%; }
+
+materialpicker-colors {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: default; }
+
+.materialpicker-colors div.selected {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 4px #000;
+  border: 2px solid #FFF; }
+
+div.materialpicker-white.selected {
+  border-color: #78909C; }
+
+.materialpicker.ng-invalid .materialpicker-colors {
+  border-color: #a94442;
+  box-shadow: 0 1px 5px #a94442; }
+
+.add-cours-form {
+  color: #35398E; }
+
+.cours-candidat {
+  padding: 0 5px;
+  border: solid white 1px; }
+
+/*# sourceMappingURL=EDTmain.css.map */

@@ -1,0 +1,16 @@
+<h2>{{day.jour}}</h2>
+<div ng-repeat="cours in day.cours" class="salle-cell">
+
+    <div cours-directive></div>
+
+</div>
+<button ng-click="addFormToggle()" class="add-cours-btn">+</button>
+
+<form class="add-candidat text-center" ng-if="addFormDisplay" ng-submit="addCours(day); addFormClose()">
+    <select ng-options="competence.nom for competence in competences" ng-model="newCours.topic"></select>    <select ng-model="newCours.salle">
+        <option ng-repeat="room in rooms">{{room}}</option>
+    </select>
+    <input class="input-half" type="text" ng-model="newCours.start" placeholder="début"/>
+    <input class="input-half" type="text" ng-model="newCours.end" placeholder="fin"/>
+    <input type="submit" value="ajouter"/>
+</form>

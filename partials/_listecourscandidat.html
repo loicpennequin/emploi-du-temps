@@ -1,0 +1,7 @@
+<span ng-style='{"background-color" : getColor(cours)}' ng-repeat="cours in day.cours" ng-show="hasCandidat(cours, candidat)"  class="cours-candidat">{{cours.topic.nom}}</span>
+<span><button ng-click="addFormToggle()" class="del-btn">+</button></span>
+<form ng-if="addCoursFormDisplay" class="add-cours-form" ng-submit="addCours(day, candidat)">
+    <select ng-options="cours.topic.nom for cours in day.cours" ng-model="newCours">
+        <input type="submit" value="ajouter"/>
+    </select>
+</form>

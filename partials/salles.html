@@ -1,0 +1,46 @@
+<!-- SECTION SALLES -->
+<div ng-controller="PlanningCtrl" class="row">
+
+    <div class="col-xs-2">
+
+        <div class="salles-menu-wrapper">
+            <button ng-click="compList()" class="menu-btn">COMPETENCES</button>
+            <div class="salles-menu" ng-if="compListDisplay">
+                <ul>
+                    <li ng-repeat="competence in competences">
+                        <span ng-style='{"background-color" : getColor(competence)}'>{{competence.nom}}</span>
+                        <span><button ng-click="deleteComp(competence)" class="del-btn">-</button></span>
+                    </li>
+                </ul>
+                <button ng-click="addCompForm()" class="add-btn">+</button>
+                <form class="add-candidat text-left" ng-if="addCompFormDisplay" ng-submit="addComp()">
+                    <input type="text" ng-model="newCompInput.nom" placeholder="nom de la compétence"/>
+                    <ngjs-color-picker selected-color="newCompInput.color"></ngjs-color-picker>
+                    <input type="submit" value="ajouter"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="salles-menu-wrapper">
+            <button ng-click="roomList()" class="menu-btn">SALLES</button>
+            <div class="salles-menu" ng-if="roomListDisplay">
+                <ul>
+                    <li ng-repeat="room in rooms">
+                        <span>{{room}}</span>
+                        <span><button ng-click="deleteRoom(room)" class="del-btn">-</button></span>
+                    </li>
+                </ul>
+                <button ng-click="addRoomForm()" class="add-btn">+</button>
+                <form class="add-candidat text-left" ng-if="addRoomFormDisplay" ng-submit="addRoom()">
+                    <input type="text" ng-model="newRoomInput" placeholder="numero de salle"/>
+                    <input type="submit" value="ajouter"/>
+                </form>
+            </div>
+        </div>
+
+    </div> <!-- /col-xs-2 -->
+
+    <div ng-repeat="day in planning" class="col-xs-2 text-center day-wrapper-top">
+        <div listecours-directive></div>
+    </div>
+</div>

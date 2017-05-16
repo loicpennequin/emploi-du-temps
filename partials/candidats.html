@@ -1,0 +1,27 @@
+<div class="row zone-candidat" ng-controller="CandidatsCtrl">
+    <div class="col-xs-2">
+        <div class="candidat-liste">
+            <ul>
+                <li ng-repeat="candidat in candidats">
+                    <span>{{candidat}}</span>
+                    <span><button ng-click="deleteCandidat(candidat)" class="del-btn">-</button></span>
+                </li>
+            </ul>
+                <button class="add-btn" ng-click="addCandidatForm()">+</button>
+                <form class="add-candidat text-left" ng-if="addCandidatDisplay == true" ng-submit="addCandidat()">
+                    <input type="text" ng-model="newCandInput" placeholder="nom du candidat"/>
+                    <input type="submit" value="ajouter"/>
+                </form>
+        </div>
+    </div>
+
+    <div ng-repeat="day in planning" class="col-xs-2">
+        <div class="candidat-liste">
+            <ul>
+                <li ng-repeat="candidat in candidats">
+                    <div listecourscandidat-directive></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

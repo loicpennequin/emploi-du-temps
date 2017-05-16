@@ -1,0 +1,127 @@
+[
+    {
+        "jour": "lundi",
+        "cours" : [
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SST",
+                    "color" : "#5484ed"
+                },
+                "candidats" : ["Candidat1"]
+            },
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SSIAP",
+                    "color" : "#46d6db"
+                },
+                "candidats" : []
+            }
+        ]
+    },
+    {
+        "jour": "mardi",
+        "cours" : [
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SST",
+                    "color" : "#5484ed"
+                },
+                "candidats" : []
+            },
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SSIAP",
+                    "color" : "#46d6db"
+                },
+                "candidats" : []
+            }
+        ]
+    },
+    {
+        "jour": "mercredi",
+        "cours" : [
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SST",
+                    "color" : "#5484ed"
+                },
+                "candidats" : []
+            },
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SSIAP",
+                    "color" : "#46d6db"
+                },
+                "candidats" : []
+            }
+        ]
+    },
+    {
+        "jour": "jeudi",
+        "cours" : [
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SST",
+                    "color" : "#5484ed"
+                },
+                "candidats" : []
+            },
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SSIAP",
+                    "color" : "#46d6db"
+                },
+                "candidats" : []
+            }
+        ]
+    },
+    {
+        "jour": "vendredi",
+        "cours" : [
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SST",
+                    "color" : "#5484ed"
+                },
+                "candidats" : []
+            },
+            {
+                "start" : "8h",
+                "end" : "12h",
+                "salle" : "101",
+                "topic" : {
+                    "nom" : "SSIAP",
+                    "color" : "#46d6db"
+                },
+                "candidats" : []
+            }
+        ]
+    }
+]
