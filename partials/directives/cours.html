@@ -1,13 +1,10 @@
-<div ng-style='{"background-color" : getColor(cours.topic)}'>
     <div>{{cours.topic.nom}}</div>
     <div>{{cours.start}} - {{cours.end}} salle {{cours.salle}}</div>
     <span><button ng-click="editFormToggle()" class="cours-btn">edit</button></span>
     <span><button ng-click="deleteCours(day, cours)" class="cours-btn">suppr</button></span>
 
     <form class="cours-edit-form" ng-if="editFormDisplay" ng-submit="editCours(day, cours); editFormClose()">
-        <select ng-model="editCours.topic">
-            <option ng-repeat="competence in competences">{{competence.nom}}</option>
-        </select>
+        <select ng-options="competence.nom for competence in competences" ng-model="editCours.topic"></select>
         <select ng-model="editCours.salle">
             <option ng-repeat="room in rooms">{{room}}</option>
         </select>
@@ -15,4 +12,3 @@
         <input class="input-half" type="text" ng-model="editCours.end" placeholder="fin"/>
         <input ng-click="editCoursFormDisplay = !editCoursFormDisplay" type="submit" value="editer"/>
     </form>
-</div>

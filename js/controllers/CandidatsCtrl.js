@@ -58,7 +58,12 @@ app.controller("CandidatsCtrl", function($http,planningFactory, $scope){
             }
         }
         $scope.getPlanning()
-        console.log($scope.planning);
+    }
+
+    $scope.deleteCours = function(cours, candidat){
+        console.log(cours);
+        console.log(candidat);
+        cours.candidats.splice(candidat, 1)
     }
 
     $scope.getColor = function(cours){

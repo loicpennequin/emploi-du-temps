@@ -1,17 +1,21 @@
 .menu-btn {
   width: 100%;
-  border: solid #9DBCE4 1px;
+  border: none;
   margin-top: 5px;
-  background-color: #35398E;
-  color: #9DBCE4;
-  padding: 5px; }
+  background-color: #38384f;
+  color: #bfbfff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.3s; }
+  .menu-btn:hover {
+    color: white; }
 
 .salles-menu-wrapper {
   margin-bottom: 10px;
   color: white; }
 
 .salles-menu {
-  background-color: #9DBCE4; }
+  background-color: #bfbfff; }
   .salles-menu ul {
     padding-left: 0;
     padding: 5px 15px;
@@ -20,23 +24,26 @@
     display: inline-block;
     width: 50%; }
   .salles-menu input {
-    color: #35398E; }
+    color: #38384f; }
 
 .competences-menu button {
   width: 100%; }
 
 .salle-cell {
-  background-color: white;
-  padding: 5px;
-  color: #35398E;
+  border: solid white 3px;
+  padding: 3px;
+  color: #38384f;
   margin-bottom: 3px;
   position: relative; }
 
 .cours-btn {
-  background-color: #9DBCE4;
-  color: #35398E;
-  border: solid 1px #35398E;
-  border-radius: 5px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #38384f;
+  border: solid 1px #58586d;
+  border-radius: 5px;
+  transition: all 0.3s; }
+  .cours-btn:hover {
+    background-color: white; }
 
 .input-half {
   width: 45%;
@@ -50,11 +57,19 @@ html, body {
   min-height: 100%; }
 
 header {
-  background-color: rgba(157, 188, 228, 0.5);
+  background-color: rgba(191, 191, 255, 0.5);
   margin-bottom: 20px; }
 
 main {
   margin-top: 20px; }
+
+h1, h2 {
+  color: #38384f;
+  -webkit-text-stroke: 2px white;
+  font-weight: bold; }
+
+h2 {
+  padding: 5px; }
 
 .zone-candidat {
   font-size: 1.3em; }
@@ -73,8 +88,8 @@ main {
   margin-left: auto; }
 
 .add-cours-btn {
-  color: #35398E;
-  background-color: #9DBCE4;
+  color: #38384f;
+  background-color: #bfbfff;
   border: solid 2px white;
   padding: 0 10px; }
 
@@ -86,10 +101,11 @@ main {
   font-size: 1.3em; }
 
 .zone-candidat {
-  background-color: #9DBCE4; }
+  background-color: #38384f;
+  border-radius: 10px; }
 
 .col-day {
-  background-color: rgba(157, 188, 228, 0.5);
+  background-color: rgba(191, 191, 255, 0.5);
   border-radius: 10px;
   box-sizing: border-box;
   border: solid white 3px; }
@@ -103,64 +119,65 @@ main {
     list-style: none; }
     .candidat-liste ul li {
       border-bottom: dashed 1px white; }
-  .candidat-liste .add-candidat, .candidat-liste .cours-edit-form {
-    background-color: white;
-    color: #35398E;
-    padding: 5px; }
-    .candidat-liste .add-candidat input[type=text], .candidat-liste .cours-edit-form input[type=text] {
-      width: 90%; }
 
-.day-wrapper-top {
+.form, .cours-edit-form {
+  background-color: rgba(56, 56, 79, 0.5);
+  color: #38384f;
+  padding: 5px;
+  border-radius: 5px; }
+  .form select, .cours-edit-form select {
+    width: 45%;
+    box-sizing: border-box; }
+  .form input[type=text], .cours-edit-form input[type=text] {
+    width: 90%; }
+
+.day-wrapper-top, .day-wrapper-bottom {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: rgba(157, 188, 228, 0.5);
+  background-color: #bfbfff;
   box-sizing: border-box;
   border: solid white 3px;
+  border-bottom: none;
   padding-bottom: 5px; }
-  .day-wrapper-top form {
+
+.day-wrapper-bottom {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+  padding-bottom: 35px; }
+  .day-wrapper-bottom form {
     padding-top: 5px; }
-  .day-wrapper-top select {
+  .day-wrapper-bottom select {
     width: 45%; }
-  .day-wrapper-top input {
+  .day-wrapper-bottom input {
     margin: 5px 0; }
-  .day-wrapper-top input[type=submit] {
+  .day-wrapper-bottom input[type=submit] {
     width: 100%; }
 
-materialpicker-colors {
-  -webkit-user-select: none;
-  user-select: none;
-  position: relative;
-  border: 1px solid #FFF;
-  border-radius: 2px;
-  display: inline-block;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  cursor: default; }
-
-.materialpicker-colors div.selected {
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 0 4px #000;
-  border: 2px solid #FFF; }
-
-div.materialpicker-white.selected {
-  border-color: #78909C; }
-
-.materialpicker.ng-invalid .materialpicker-colors {
-  border-color: #a94442;
-  box-shadow: 0 1px 5px #a94442; }
-
 .add-cours-form {
-  color: #35398E; }
+  color: #38384f; }
 
 .cours-candidat {
   padding: 0 5px;
   border: solid white 1px;
   width: 33%;
   display: inline-block;
-  font-size: 0.9em;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  cursor: pointer;
+  opacity: 0.8; }
+  .cours-candidat:hover {
+    opacity: 1; }
+
+.cours-libelle {
+  overflow-x: hidden;
+  color: #38384f; }
+
+.candidat-cell {
+  height: 60px; }
 
 .liste-cours {
-  overflow-x: scroll; }
+  overflow-y: hidden; }
 
 /*# sourceMappingURL=EDTmain.css.map */
