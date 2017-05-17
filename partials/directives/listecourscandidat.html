@@ -2,10 +2,9 @@
     <div ng-click="deleteCours(cours, candidat)" ng-style='{"background-color" : getColor(cours)}' ng-repeat="cours in day.cours" ng-show="hasCandidat(cours, candidat)"  class="cours-candidat">
         <div class="cours-libelle">{{cours.topic.nom}}</div>
     </div>
-    <button ng-click="addFormToggle()" class="del-btn">+</button>
+    <button ng-click="addFormToggle()" class="cours-btn">+</button>
 </div>
 <form ng-if="addCoursFormDisplay" class="form" ng-submit="addCours(day, candidat)">
     <select ng-options="cours.topic.nom for cours in day.cours" ng-model="newCours"></select>
     <input type="submit" value="ajouter"/>
-
 </form>

@@ -22,7 +22,10 @@
     list-style: none; }
   .salles-menu li {
     display: inline-block;
-    width: 50%; }
+    width: 50%;
+    color: white;
+    border: solid white 1px;
+    box-sizing: border-box; }
   .salles-menu input {
     color: #38384f; }
 
@@ -172,7 +175,7 @@ h2 {
 
 .cours-libelle {
   overflow-x: hidden;
-  color: #38384f; }
+  color: white; }
 
 .candidat-cell {
   height: 60px; }

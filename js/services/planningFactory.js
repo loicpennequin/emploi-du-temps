@@ -5,6 +5,7 @@ app.factory ('planningFactory', function($q, $http){
     return {
         getJson : function(){
             $http.get('assets/json/planning.json').then(function(response){
+                planning = response.data
                 deferred.resolve(response.data);
             }).catch(function(error){
                 deferred.reject(error);

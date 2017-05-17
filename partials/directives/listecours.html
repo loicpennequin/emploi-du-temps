@@ -4,7 +4,7 @@
     <div cours-directive></div>
 
 </div>
-<button ng-click="addFormToggle()" class=" cours-btn">+</button>
+<button ng-click="addFormToggle()" class="cours-btn">+</button>
 
 <form class="form text-center" ng-if="addFormDisplay" ng-submit="addCours(day); addFormClose()">
     <select ng-options="competence.nom for competence in competences" ng-model="newCours.topic"></select>    <select ng-model="newCours.salle">

@@ -7,8 +7,8 @@
             <button ng-click="compList()" class="menu-btn">COMPETENCES</button>
             <div class="salles-menu" ng-if="compListDisplay">
                 <ul>
-                    <li ng-repeat="competence in competences">
-                        <span ng-style='{"background-color" : getColor(competence)}'>{{competence.nom}}</span>
+                    <li ng-style='{"background-color" : getColor(competence)}' ng-repeat="competence in competences" class="text-center">
+                        <span>{{competence.nom}}</span>
                         <span><button ng-click="deleteComp(competence)" class="del-btn">-</button></span>
                     </li>
                 </ul>
