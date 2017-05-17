@@ -99,7 +99,7 @@ angular.module('ngjsColorPicker', [])
         var defaultColors =  [
             '#7bd148',
             '#5484ed',
-            '#a4bdfc',
+            '#4C62DF',
             '#46d6db',
             '#7ae7bf',
             '#51b749',
@@ -108,7 +108,7 @@ angular.module('ngjsColorPicker', [])
             '#ff887c',
             '#dc2127',
             '#dbadff',
-            '#e1e1e1'
+            '#935FCA'
         ];
 
         var defaultValues = {

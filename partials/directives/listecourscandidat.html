@@ -1,5 +1,6 @@
 <div class="liste-cours">
-    <div ng-click="deleteCours(cours, candidat)" ng-style='{"background-color" : getColor(cours)}' ng-repeat="cours in day.cours" ng-show="hasCandidat(cours, candidat)"  class="cours-candidat">
+    <div ng-click="deleteCours(cours, candidat)" ng-style='{"background-color" : getColor(cours)}' ng-repeat="cours in day.cours" ng-show="hasCandidat(cours, candidat)"  uib-tooltip="{{cours.start}} - {{cours.end}} salle {{cours.salle}}"
+tooltip-popup-delay='500'  class="cours-candidat">
         <div class="cours-libelle">{{cours.topic.nom}}</div>
     </div>
     <button ng-click="addFormToggle()" class="cours-btn">+</button>

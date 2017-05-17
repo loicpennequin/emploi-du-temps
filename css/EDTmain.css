@@ -141,7 +141,7 @@ h2 {
   box-sizing: border-box;
   border: solid white 3px;
   border-bottom: none;
-  padding-bottom: 5px; }
+  padding-bottom: 15px; }
 
 .day-wrapper-bottom {
   border-top-left-radius: 0px;
@@ -163,7 +163,7 @@ h2 {
   color: #38384f; }
 
 .cours-candidat {
-  padding: 0 5px;
+  padding: 5px;
   border: solid white 1px;
   width: 33%;
   display: inline-block;
