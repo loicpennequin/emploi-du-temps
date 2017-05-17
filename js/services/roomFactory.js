@@ -1,9 +1,6 @@
 app.factory ('roomFactory', function($q, $http){
-    var rooms;
-    $http.get('assets/json/rooms.json').then(function(response){
-        rooms = response.data
-    });
-    var deferred = $q.defer();
+    var rooms = [];
+          deferred = $q.defer();
 
     return {
         getJson : function(){

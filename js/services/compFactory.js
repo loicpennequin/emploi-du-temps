@@ -1,9 +1,6 @@
 app.factory ('compFactory', function($q, $http){
-    var competences;
-    $http.get('assets/json/comp.json').then(function(response){
-        competences = response.data
-    });
-    var deferred = $q.defer();
+    var competences = [],
+          deferred = $q.defer();
 
     return {
         getJson : function(){

@@ -1,9 +1,6 @@
 app.factory ('planningFactory', function($q, $http){
-    var planning;
-    $http.get('assets/json/planning.json').then(function(response){
-        planning = response.data
-    });
-    var deferred = $q.defer();
+    var planning = [],
+          deferred = $q.defer();
 
     return {
         getJson : function(){
@@ -30,7 +27,7 @@ app.factory ('planningFactory', function($q, $http){
             planning[day].cours[cours].topic= data.topic;
         },
         addCandidat : function(cours, candidat){
-            
+
         }
     }
 });
